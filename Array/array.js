@@ -121,7 +121,7 @@ nums.reverse();
 
 console.log(nums);
  
-//------------------------------------//
+//-------------uppgift 18-22 ----------------------//
 
 let str = 'Supercalifragilisticexpialidocious';
 
@@ -131,6 +131,10 @@ let containsX = str.includes('x');
 
 let positin_of_P = str.indexOf('p');
 
+let stringposition5 = str[4];
+
+let last7characters = str.slice(-7);
+
 console.log(str);
 
 console.log(containsN);
@@ -138,3 +142,11 @@ console.log(containsN);
 console.log(containsX);
 
 console.log(positin_of_P);
+
+console.log(str.length);
+
+console.log(stringposition5);
+
+console.log(last7characters);
+
+//-----
