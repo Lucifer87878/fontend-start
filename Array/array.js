@@ -160,3 +160,47 @@ console.log(arrayFilter);
 let arrayFilter2 = numArray.filter(num => num <=5);
 
 console.log(arrayFilter2);
+
+//-------------------------------------------------------//
+
+
+let persons = [
+    {
+        name: "Felicia",
+        age: 12
+    },
+    {
+        name: "Pelle",
+        age: 20
+    },
+    {
+        name: "Peter",
+        age: 59
+    },
+    {
+        name: "Anna",
+        age: 32
+    },
+    {
+        name: "Jocke",
+        age: 18
+    },
+    {
+        name: "Ella",
+        age: 3
+    }
+];
+
+console.log(persons);
+
+let age = persons.map( person => person.age);
+
+function checkAdult(personAge) 
+{
+    return personAge >= 18;  // för att underlätta för mig genom att bytta ut > till < så för man svar för fråga 24    
+}
+
+let result = age.filter(checkAdult);
+
+console.log(result);
+
