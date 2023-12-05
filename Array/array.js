@@ -149,4 +149,6 @@ console.log(stringposition5);
 
 console.log(last7characters);
 
-//-----
+//-----.filter()-----//
+
+let numArray = [23, 45, 5, 62, 1, 21, 3, 54];
