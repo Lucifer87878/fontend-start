@@ -152,3 +152,11 @@ console.log(last7characters);
 //-----.filter()-----//
 
 let numArray = [23, 45, 5, 62, 1, 21, 3, 54];
+
+let arrayFilter = numArray.filter(num => num >=5);
+
+console.log(arrayFilter);
+
+let arrayFilter2 = numArray.filter(num => num <=5);
+
+console.log(arrayFilter2);
