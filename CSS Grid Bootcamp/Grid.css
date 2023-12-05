@@ -1,0 +1,29 @@
+
+
+/* Static grid */
+
+.grid-item {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+
+/* Flow grid */
+
+.grid-item {
+    grid-column: auto / span 2;
+    grid-row: auto / span 1;
+}
+
+
+/* Grid templates */
+
+.grid-container {
+    grid-template-areas:
+    "topbar topbar topbar";
+    grid-template-rows: 4rem; 
+}
+
+.grid-item {
+    grid-area: "topbar";
+}
