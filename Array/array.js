@@ -29,7 +29,7 @@ console.log(fruits[1]);
 
 
 
-//------------------------simpla delen-------------------------//
+//------------------------simpla delen------------------------------------------------------------------//
 
 //------------------------mer anvancerade delen för mig-------jag behöver öva mer------------------//
 let a = [1, 2, 3];
@@ -40,7 +40,7 @@ console.log(a);
 console.log(b);
 console.log(mergedArray);
 
-//------------------------------//
+//--------------------------------------------------------------------//
 
 let a1 = [1,2,3,7,8,9];
 let b1 = [4,5,6];
@@ -51,7 +51,7 @@ a.splice(4,5,6);
 console.log(a1);
 console.log(b1);
 
-//----------slut på uppgift 8----------//
+//----------------------------slut på uppgift 8------------------------------//
 
 // clona en lista "array" utan att repetera sig själv av inehåll
 
@@ -61,11 +61,11 @@ let clonedArr = arr.slice();
 console.log(arr);
 console.log(clonedArr);
 
-//-----------slut på uppgift 9---------------------//
+//------------------------------slut på uppgift 9---------------------//
 
-//--uppgift 10-15-------Methods--------//
+//-----------------------------uppgift 10-15----------------Methods-----------------//
 
-//-----.push()"till läg ett eller flera objekt i slutet av listan" 
+//.push()"till läg ett eller flera objekt i slutet av listan" 
 //.unshift() "tilläg ett eller flera objekt i början av array 'listan' " 
 //.pop() "för att ta bort sista i lista", 
 //.shift() "används för att ta bort det första elementet från en array"
@@ -74,12 +74,14 @@ console.log(clonedArr);
 //.indexOf() "används för att söka efter ett specifikt element i en array eller en viss del av en sträng."
 //.substring() " Metoden tar två argument, startindex och slutindex, och returnerar den extraherade delen som en ny sträng"
 //.reverse()  "För att skriva ut arrayen i omvänd ordning"
-//-------------------//
+
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------------//
 
 let newFruits = fruits.push("monkey-banana");
 console.log(fruits);
 
 //-----tilläg av frukt i början av arrayen 
+
 fruits.unshift("orange")
 
 console.log(fruits);
@@ -100,7 +102,7 @@ fruits.splice(2,0,"Monkey-banana","Guwana","cherry")
 
 console.log(fruits);
 
-//--------------------klar uppgift 10-15---------------------------//
+//-------------------------klar uppgift 10-15---------------------------//
 
 //------------------------uppgift 16-22-----------------------------------------//
 
@@ -121,7 +123,7 @@ nums.reverse();
 
 console.log(nums);
  
-//-------------uppgift 18-22 ----------------------//
+//-----------------------uppgift 18-22 ----------------------//
 
 let str = 'Supercalifragilisticexpialidocious';
 
@@ -149,7 +151,7 @@ console.log(stringposition5);
 
 console.log(last7characters);
 
-//-----.filter()-----//
+//-----------------.filter()-------------------//
 
 let numArray = [23, 45, 5, 62, 1, 21, 3, 54];
 
@@ -161,7 +163,7 @@ let arrayFilter2 = numArray.filter(num => num <=5);
 
 console.log(arrayFilter2);
 
-//-------------------------------------------------------//
+//-------------------------------------behöver öva mer--------------------------------//
 
 
 let persons = [
@@ -197,10 +199,15 @@ let age = persons.map( person => person.age);
 
 function checkAdult(personAge) 
 {
-    return personAge >= 18;  // för att underlätta för mig genom att bytta ut > till < så för man svar för fråga 24    
+    return personAge >= 18;  // för att underlätta för mig genom att bytta ut > till < så för man svar för fråga 24    (på rad 205 kan man göra samma sak för att ändra för namn)
 }
 
 let result = age.filter(checkAdult);
 
+let nameOfAdult = persons.filter(person => person.age >= 18).map(person => person.name); // för att få ut namnen av dom också
+
 console.log(result);
 
+console.log(nameOfAdult);
+
+//-------------------------uppgift 23-26 avklarade------------------------//
