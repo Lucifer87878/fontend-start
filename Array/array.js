@@ -226,7 +226,7 @@ nums1.sort();
 
 console.log(nums1);
 
-//------------------------------uppgift 29-33-----------------------//
+//------------------------------uppgift 29-33----------Behöver öva mer på detta innan jag kan det-------------//
 
 
 persons.sort(function (a3, b3)   // sortering efter older yngst först från listan persons
@@ -249,4 +249,72 @@ persons.sort((a, b) => a.name.localeCompare(b.name)); // sortering av arrayen pe
 
 console.log(persons);
 
+
+//-----------------------------------------------------------------------------------------------//
+
+/*
+I detta exempel används en return-sats inom .map() 
+för att skapa ett nytt objekt med namnet i versaler utan att använda spread-operatorn. 
+Varje objekt i upperCaseNames har egenskaperna name och age.  
+*/
+
+let upperCaseNames = persons.map(person => {
+  return { name: person.name.toUpperCase(), age: person.age };
+});
+
+console.log(upperCaseNames);
+
+
+
+//------------------------------------------------------------------------------------------------//
+
+/*
+denna return-sats inom .map() är i stort det samma som den åvan 
+skillnaden är i dernna uppgift så andvänder man sig av split och join 
+
+
+person.name.split(''): Delar upp strängen (namnet) i en array av enskilda tecken.
+.join(''): Slår samman de omvända tecknen till en sträng igen
+
+*/
+
+
+let reversedNames = persons.map(person => {
+  return {
+    name: person.name.split('').reverse().join(''), // namnen blir Spegelvända
+    age: person.age
+  };
+});
+
+console.log(reversedNames);
+
+
+//-------------------------------Loop arrays-------------------------------------------------------------//
+
+let fruits2 = ['apelsin', 'päron', 'äpple', 'kiwi'];
+ 
+fruits2.forEach(fruit => {console.log(fruit)});
+
+
+for (let fruit of fruits2)
+    console.log(fruit);
+
+
+for (let i = 0; i < fruits2.length; i++)
+
+console.log(fruits2[i]);
+
+//-------------------------------------------------------------------------------------------------------------//
+
+
+
+
+//------------denna uppgift kan jag ej, fick ta hjälp på ett sät jag inte gillar att jobba --------------------//
+
+fruits.forEach((fruit, index) => {
+    console.log(`${index}: ${fruit}`);
+  });
+
+
+//-------------------------------------------------------------------------------------------------------------//
 
