@@ -2,7 +2,7 @@
 
 let fruits = ['kiwi', 'apple', 'pear'];
 
-let animals = ['cat', 'hamster', 'parrot', 'funky chihuahua']
+let animals = ['cat', 'hamster', 'parrot', 'funky chihuahua'];
 
 let newAnimal = animals.push("dog");
 
