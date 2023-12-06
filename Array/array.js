@@ -211,3 +211,42 @@ console.log(result);
 console.log(nameOfAdult);
 
 //-------------------------uppgift 23-26 avklarade------------------------//
+
+let arr1 = ['beta', 'alfa', 'gamma'];
+
+arr1.sort();
+
+console.log(arr1);
+
+//--------------------------uppgift 28----------------------------------//
+
+let nums1 = [1,5,7,9,3,4,2,6,8];
+
+nums1.sort();
+
+console.log(nums1);
+
+//------------------------------uppgift 29-33-----------------------//
+
+
+persons.sort(function (a3, b3)   // sortering efter older yngst först från listan persons
+{
+    return a3.age - b3.age;  // för att få älst fört bytt plats på a3 och b3
+});
+
+console.log(persons);
+
+
+/*
+Arrow functions använder => för att ersätta function-nyckelordet.
+Om funktionen har bara en parameter eller ingen parameter, 
+kan du skriva det utan parenteser kring parametrarna: param => expression.
+Om funktionen har fler än en parameter eller inga parameter, 
+använd parenteser: (param1, param2) => expression.
+*/
+
+persons.sort((a, b) => a.name.localeCompare(b.name)); // sortering av arrayen persons i bokstavs ordning "förklaring om Arrow finns ovan"
+
+console.log(persons);
+
+
