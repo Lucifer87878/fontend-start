@@ -82,7 +82,7 @@ console.log(fruits);
 
 //-----tilläg av frukt i början av arrayen 
 
-fruits.unshift("orange")
+fruits.unshift("orange");
 
 console.log(fruits);
 
@@ -94,11 +94,11 @@ fruits.shift();
 
 console.log(fruits);
 
-fruits.splice(1,0,"orange")
+fruits.splice(1,0,"orange");
 
 console.log(fruits);
 
-fruits.splice(2,0,"Monkey-banana","Guwana","cherry")
+fruits.splice(2,0,"Monkey-banana","Guana","cherry");
 
 console.log(fruits);
 

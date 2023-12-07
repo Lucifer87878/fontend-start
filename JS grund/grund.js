@@ -57,3 +57,114 @@ Rätt svar är C
 
 */
 
+//------------------------------------------------------------------------//
+
+/*
+
+detta är en alert popup efter man klikar på knapp som skall vara kopplat till denna kod. 
+som skall skriva ut ......Ariba!......
+
+
+
+el.on('click', () => {
+    alert('Ariba!');
+})
+
+*/
+
+
+//------------------------------------------------------------------------//
+
+var greeting = 'Good bye world!';
+
+{
+    let greeting = 'Hello World';
+}
+
+console.log(greeting);
+
+// svaret är Good bye world! 
+
+//------------------------------------------------------------------------//
+
+
+//  Vilken av följande syntax är korrekt sätt att skriva strängar.
+/* 
+Det finns två rätt svar och det är "A" & 'B'
+
+"Hello World" // A 
+'Hello World' // B
+`Hello World` // C
+
+*/
+
+//------------------------------------------------------------------------//
+
+
+// 9 Räkna antal tecken i strängen nedan.
+
+// rätt svar 97 st
+
+let sentence = "If you're having code problems I feel bad for you son. I got 99 problems, but a glitch ain't one."
+
+console.log(sentence.length);
+
+
+//------------------------------------------------------------------------//
+
+{
+    let name = 'Goran';
+    let N = 'Goran';
+    
+    let skrivUt = `Hej ${N} din gamle knasboll!`;
+    
+    console.log(skrivUt);
+}
+
+//------------------------------------------------------------------------//
+
+let fruit = ['Banana', 'Orange', 'Kiwi', 'apple', 'pear'];
+console.log(fruit);
+
+
+fruit.unshift('cherry');
+fruit.push('Guana')
+console.log(fruit);
+
+
+
+fruit.pop();
+fruit.shift();
+console.log(fruit);
+
+
+fruit.splice(2,0,'green-apple','green-banana');
+console.log(fruit);
+
+
+let fruits = ['apple', 'orange', 'pear', 'kiwi'];
+fruits[0] = 'pineapple';
+console.log(fruits);
+
+let clonedFruits = fruits.slice();
+console.log(clonedFruits);
+
+//------------------------------------------------------------------------//
+
+
+let num = [1,5,78,7,122,3,4,65,40,2,8]
+
+num.sort(function(a,b){return a - b;});
+console.log(num);
+
+//------------------------------------------------------------------------//
+
+let a1 = [1,2,3];
+let b1 = [4,5,6];
+
+let mergedArray = a1.concat(b1);
+console.log(mergedArray);
+
+//------------------------------------------------------------------------//
+
+
