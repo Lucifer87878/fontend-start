@@ -1,9 +1,10 @@
 
+//---------------------------------Datatyper-------------------------------------//
 let datatypes = ['string', 'Number', 'Boolean', 'Null', 'Undefined'];
 
 console.log(datatypes);
 
-//----------------------//
+//----------------------------------------------------------------------//
 
 let a = 1;
 let b = '1';
@@ -18,7 +19,7 @@ let name1 = 'Greta Thunberg';
 /*let är block-scopad, vilket innebär att dess synlighet är begränsad till det block (inom måsvingar {}) där den deklarerades. */
 
 console.log(name1);
-//-------------------------------------------//
+//----------------------------------------------------------------------//
 var name2 = 'Greta Thunberg';
 
 /* var är funktions-scopad, vilket innebär att dess synlighet är begränsad till funktionen där den deklarerades, 
@@ -26,7 +27,7 @@ eller om den inte deklarerades i en funktion, är den globalt synlig */
 
 console.log(name2);
 
-//-----------------------------------------------------------------------//
+//----------------------------------------------------------------------//
 
 /*  
 
@@ -43,7 +44,7 @@ console.log(typeof x); // "number"
 console.log(typeof y); // "string"
 console.log(typeof z); // "boolean"
 
-//----------------------------------------------------------------------//
+//-------------------------------Block---------------------------------------//
 
 
 /*
@@ -85,7 +86,7 @@ console.log(greeting);
 
 // svaret är Good bye world! 
 
-//------------------------------------------------------------------------//
+//---------------------------------Strings---------------------------------------//
 
 
 //  Vilken av följande syntax är korrekt sätt att skriva strängar.
@@ -112,16 +113,14 @@ console.log(sentence.length);
 
 //------------------------------------------------------------------------//
 
-{
     let name = 'Goran';
     let N = 'Goran';
     
     let skrivUt = `Hej ${N} din gamle knasboll!`;
     
     console.log(skrivUt);
-}
 
-//------------------------------------------------------------------------//
+//--------------------------------Arrays----------------------------------------//
 
 let fruit = ['Banana', 'Orange', 'Kiwi', 'apple', 'pear'];
 console.log(fruit);
@@ -231,7 +230,7 @@ let containsEwa = names2.includes('Ewa');
 
 console.log(containsEwa);
 
-//------------------------------------------------------------------------//
+//--------------------------------Loops----------------------------------------//
 
 
 for (let i = 0; i <= 1000; i++) 
@@ -273,7 +272,7 @@ const kortlek = skapaKortlek();
 
 console.log(kortlek);
 
-//------------------------------------------------------------------------//
+//----------------------------------Objects--------------------------------------//
 
 let book = 
 {
@@ -286,7 +285,8 @@ console.log(book);
 
 //------------------------------------------------------------------------//
 
-let person = {
+let person = 
+{
     name: 'Sixten Faceplant',
     email: 'sixten.faceplant@zocom.se',
     role: 'ninjah',
@@ -305,3 +305,86 @@ console.log(containsCity);
 let clonename = person.name.slice();
 console.log(clonename);
 
+//------------------------------------------------------------------------//
+
+let N1 = 'Fido';
+
+let dog =
+{
+    name3:'Fido',
+    bread:'mops',
+    bark: [`Woff, jag heter ${N1}!`]
+};
+
+
+let skrivUtBark = dog.bark[0];
+
+console.log(skrivUtBark);
+
+//------------------------------------------------------------------------//
+
+let person1 = 
+{ 
+    name: 'sixten',
+    email: 'sixten@zocom.se', 
+    role: 'ninjah',
+    age: 32 
+};
+
+for (let key in person1) 
+{
+    let value = person1[key];
+    console.log(`${key}: ${value}`);
+}
+
+
+//-------------------------------Functions-----------------------------------------//
+
+let x1 = 9;
+
+let y1 = 23;
+
+let sumering = x1 + y1;
+
+console.log(sumering);
+
+let explainDifference = function() {
+    return "En namngiven funktion har ett specifikt namn och kan refereras till genom det namnet. En anonym funktion har ingen specifik identifierare och används oftast när du bara behöver funktionen på ett ställe och inte kommer att referera till den igen.";
+};
+
+// Anropa funktionen och logga resultatet
+console.log(explainDifference());
+
+
+
+
+
+function extractYear(dateString) {
+    return dateString.substring(0, 10);
+}
+
+let inputDate = '2023-12-07';
+let getYear = extractYear(inputDate);
+
+console.log(getYear); // Resultatet kommer att vara '2022'
+
+
+
+
+
+
+
+function perfOperat(numer1, numer2, operator) {
+    switch (operator) 
+    {
+        case '+':
+            return numer1 + numer2;
+    }
+}
+
+let result3 = perfOperat(5, 3, '+');
+console.log(result3);
+
+//-----------------------------------Conditionals-------------------------------------//
+
+// fortsätt från uppgift    37
