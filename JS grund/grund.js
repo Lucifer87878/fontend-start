@@ -168,3 +168,85 @@ console.log(mergedArray);
 //------------------------------------------------------------------------//
 
 
+let a2 = ['My', 'has', 'many', 'open'];
+let b2 = ['brain', 'to', 'tabs', '!'];
+
+let mergea2b2 = [];
+
+for (let i = 0; i < Math.max(a2.length, b2.length); i++) {
+    mergea2b2.push(a2[i], b2[i]);
+}
+
+console.log(mergea2b2);
+
+//------------------------------------------------------------------------//
+
+
+let a3 = [1, 2, 7, 8, 9, 10];
+let b3 = [3, 4, 5, 6];
+
+a3.splice(2, 0, b3[0], b3[1], b3[2], b3[3]);
+
+console.log(a3);
+
+//------------------------------------------------------------------------//
+
+let names = ['sixten', 'Eva', 'Ali', 'Kim', 'Greger', 'Alicia'];
+
+let upperCaseNames = names.map(name => {
+    return name.toUpperCase();
+  });
+  
+  console.log(upperCaseNames);
+
+//------------------------------------------------------------------------//
+
+  let names1 = [
+    { name: 'sixten', age: 32 },
+    { name: 'Eva',    age: 19 }, 
+    { name: 'Ali',    age: 67 },
+    { name: 'Kim',    age: 13 },
+    { name: 'Greger', age: 30 },
+    { name: 'Alicia', age: 82 }
+    ];
+
+let age = names1.map( names1 => names1.age);
+
+function checkAdult(personAge) 
+{
+    return personAge >= 30;  
+}
+
+let result = age.filter(checkAdult);
+
+let nameOfAdult = names1.filter(person => person.age >= 30).map(person => person.name); // för att få ut namnen av dom också
+
+console.log(nameOfAdult);
+
+//------------------------------------------------------------------------//
+
+let names2 = ['sixten', 'Eva', 'Ali', 'Kim', 'Greger', 'Alicia'];
+
+let containsEwa = names2.includes('Ewa');
+
+console.log(containsEwa);
+
+//------------------------------------------------------------------------//
+
+
+for (let i = 0; i <= 1000; i++) 
+{
+    console.log("Detta är nr: " + i);
+}
+
+
+for (let i = 100; i >= 0; i--)
+console.log("Detta är nr: " + i);
+
+
+let fruits5 = ['apple', 'orange', 'pear', 'kiwi', 'pineapple'];
+console.log(fruits5);
+
+//------------------------------------------------------------------------//
+
+
