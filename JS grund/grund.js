@@ -249,4 +249,59 @@ console.log(fruits5);
 
 //------------------------------------------------------------------------//
 
+function skapaKortlek() 
+{
+    const suits = ['Hearts','Clubs', 'Diamonds', 'Spades'];
+    const values = ['2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14'];
+
+    let kortlek = [];
+
+    for (let i = 0; i < suits.length; i ++){
+        for(let v = 0; v < values.length; v++){
+            let kort = 
+            {
+                suits: suits[i],
+                values: values[v]
+            };
+            kortlek.push(kort);
+        }
+    }
+    return kortlek;
+}
+
+const kortlek = skapaKortlek();
+
+console.log(kortlek);
+
+//------------------------------------------------------------------------//
+
+let book = 
+{
+    title:'The Road to React',
+    author:' Robin Wieruch',
+    genres: ['Book']
+
+};
+console.log(book);
+
+//------------------------------------------------------------------------//
+
+let person = {
+    name: 'Sixten Faceplant',
+    email: 'sixten.faceplant@zocom.se',
+    role: 'ninjah',
+    adress: 
+    {
+        street: 'Karatevägen 3',
+        zip: '41477',
+        city: 'Kablam City'
+    }
+}
+
+let containsCity = person.adress.city;
+
+console.log(containsCity);
+
+let clonename = person.name.slice();
+console.log(clonename);
 
